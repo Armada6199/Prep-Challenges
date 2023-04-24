@@ -117,7 +117,7 @@ for (let i=0;i<arr.length;i++){
 // -------------------------------------------------------------------------------------------------------
 
 //  ------------------------------------------------------------------------------------------------------
-// Challenge 04:
+// Challenge 04:m
 // Optional:
 
 // The Head manager wants to get more organized info about some students, he wants you to find the students from the courses dataset
