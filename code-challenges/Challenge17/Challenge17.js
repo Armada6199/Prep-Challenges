@@ -17,7 +17,7 @@
 const recursionPattern = (int1, int2) => {
     // write your code here
     if(int1==0) return;
-    
+   int1-int2+recursionPattern (int1-int2,int2)
 }
 // -------------------------------------------------------------------------------------------------------
 
