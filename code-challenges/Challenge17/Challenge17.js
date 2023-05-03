@@ -13,11 +13,15 @@
 // Input: 50, 9
 // Output: [50, 41, 32, 23, 14, 5, -4, 5, 14, 23, 32, 41, 50]
 //
-
-const recursionPattern = (int1, int2) => {
-    // write your code here
-    if(int1==0) return;
-   int1-int2+recursionPattern (int1-int2,int2)
+const recursionPattern = (int1, int2,arr=[]) => {
+        // write your code here
+       if(int1<0){arr.push(int1);return arr};
+       arr.push(int1);
+      recursionPattern(int1-int2,int2,arr);
+      let newArr=Array.from(arr);
+      newArr.reverse();
+      newArr.shift()
+      return arr.concat(newArr);
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -37,12 +41,15 @@ const recursionPattern = (int1, int2) => {
 
 const filterLinks = (str) => {
     // write your code here
+    let regex=/www.\w{1,}\.(com|org)/
+    return str.match(regex)[0]
+
 }
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
 // Challenge 03:
-// Required:
+// Required: u 
 // 
 // A phrase is considered palindrome if, after converting all uppercase letters into lowercase letters
 // and removing all non-alphanumeric characters, it reads the same forward and backward.
@@ -53,10 +60,14 @@ const filterLinks = (str) => {
 // Output: true
 // as you can see "amanaplanacanalpanama" is a palindrome.
 //
-
-const isPalindrome = (str) => {
-    // write your code here
-}
+    const isPalindrome = (str) => {
+            // write your code here
+            let regex=/[^a-zA-Z]/
+        str=str.split(regex).join("").toLowerCase()
+        let reverse=str.split("").reverse().join("");
+        if(str===reverse) return true 
+        return false
+        }
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
