@@ -44,20 +44,17 @@ const wordLength = (str) => {
 
 const wordLetters = (str1, str2) => {
 
-    var a = s1[0], b = s2[0];
+    let a = s1[0], b = s2[0];
  
-    for (var i = 1; i < s1.length; i++)
+    for (let i = 1; i < s1.length; i++)
         if (s1[i] != s1[i - 1]) {
             a += s1[i];
         }
- 
-   
-    for (var i = 1; i < s2.length; i++)
+    for (let i = 1; i < s2.length; i++)
         if (s2[i] != s2[i - 1]) {
             b += s2[i];
         }
- 
-    
+
     if (a == b)
         return true;
  
