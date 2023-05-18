@@ -24,7 +24,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "\r\nfunction equalizeArray(arr) {\r\n    // Write your code here\r\n   let occ = 0;\r\n  arr.forEach((num) => {\r\n    let len = arr.filter((item) => item === num).length;\r\n    if (len > occ) {\r\n      occ = len;\r\n    }\r\n  });\r\n  return arr.length - occ;\r\n}"
             ],
             "outputs": []
         },
