@@ -43,7 +43,7 @@ const wordLength = (str) => {
 // Output: false
 
 const wordLetters = (str1, str2) => {
-    // write your code here
+
     var a = s1[0], b = s2[0];
  
     for (var i = 1; i < s1.length; i++)
